@@ -1,0 +1,19 @@
+## Static files
+*
+!/**/
+
+!.github/workflows/dotnetcore.yml
+
+!.gitignore
+!LICENSE
+!README.md
+/**/Debug
+/**/Release
+
+## Add specific files
+!LessPaper.Shared/LessPaper.Shared.Queueing.csproj
+!LessPaper.Shared.Queueing.UnitTest/LessPaper.Shared.Queueing.UnitTest.csproj
+!LessPaper.Shared.Queueing.sln
+
+!/**/*.cs
+
