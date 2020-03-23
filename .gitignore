@@ -1,8 +1,7 @@
 ## Static files
 *
 !/**/
-
-!.github/workflows/dotnetcore.yml
+!.github/workflows/*.yml
 
 !.gitignore
 !LICENSE
