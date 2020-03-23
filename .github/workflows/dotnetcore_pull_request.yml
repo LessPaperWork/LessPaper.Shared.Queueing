@@ -18,7 +18,7 @@ jobs:
       run: dotnet build --configuration Release    
     - name: Build solution and generate NuGet package
       run: |  
-        cd LessPaper.Shared
+        cd LessPaper.Shared.Queueing
         dotnet pack -c Release 
   
   test:
