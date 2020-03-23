@@ -10,7 +10,7 @@
 /**/Release
 
 ## Add specific files
-!LessPaper.Shared/LessPaper.Shared.Queueing.csproj
+!LessPaper.Shared.Queueing/LessPaper.Shared.Queueing.csproj
 !LessPaper.Shared.Queueing.UnitTest/LessPaper.Shared.Queueing.UnitTest.csproj
 !LessPaper.Shared.Queueing.sln
 
