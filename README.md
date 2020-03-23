@@ -1,5 +1,5 @@
-# LessPaper.Shared
-Shared across LessPaper services
+# LessPaper.Shared.Queueing
+Shared across LessPaper services that uses queuing
 
 ## Status
 ![.NET Core](https://github.com/LessPaperWork/LessPaper.Shared.Queueing/workflows/.NET%20Core/badge.svg)
