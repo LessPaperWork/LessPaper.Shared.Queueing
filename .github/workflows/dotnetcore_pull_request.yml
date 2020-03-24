@@ -21,7 +21,7 @@ jobs:
         cd LessPaper.Shared.Queueing
         dotnet pack -c Release 
   
-  test:
+  unit_test:
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -32,4 +32,6 @@ jobs:
       with:
         dotnet-version: 3.1.101      
     - name: Run tests
-      run: dotnet test 
+      run: |  
+        cd LessPaper.Shared.Queueing.UnitTest
+        dotnet test 
