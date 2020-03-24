@@ -21,13 +21,13 @@ jobs:
         cd LessPaper.Shared.Queueing
         dotnet pack -c Release 
   
-  test:
+  unit_test:
     runs-on: ubuntu-latest
     needs: build
     steps:
     - name: checkout
       uses: actions/checkout@v2      
-    - name: Define runtime for test   
+    - name: Define runtime for unit_test   
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101      
@@ -41,9 +41,30 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: ./LessPaper.Shared.Queueing.UnitTest/TestResults/coverage.info 
 
+  integration_test:
+    runs-on: ubuntu-latest
+    needs: [build, unit_test]
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2      
+    - name: Define runtime for test   
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101      
+    - uses: getong/rabbitmq-action@v1.2
+      with:
+        rabbitmq version: '3.8.2-management-alpine'
+        host port: 5672
+        rabbitmq user: 'guest'
+        rabbitmq password: 'guest'
+    - name: Run tests
+      run: |  
+        cd LessPaper.Shared.Queueing.IntegrationTest
+        dotnet test
+
   publish:
     runs-on: ubuntu-latest
-    needs: [build, test]
+    needs: [build, unit_test, integration_test]
     steps:
     - name: checkout
       uses: actions/checkout@v2      
