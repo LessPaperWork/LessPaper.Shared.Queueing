@@ -1,9 +1,9 @@
-# LessPaper.Shared
-Shared across LessPaper services
+# LessPaper.Shared.Queueing
+Shared across LessPaper services that uses queuing (rabbitMq)
 
 ## Status
-![.NET Core](https://github.com/LessPaperWork/LessPaper.Queueing.Shared/workflows/.NET%20Core/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/LessPaperWork/LessPaper.Queueing.Shared/badge.svg?branch=master)](https://coveralls.io/github/LessPaperWork/LessPaper.Shared?branch=master)
+![.NET Core](https://github.com/LessPaperWork/LessPaper.Shared.Queueing/workflows/.NET%20Core/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/LessPaperWork/LessPaper.Shared.Queueing/badge.svg?branch=master)](https://coveralls.io/github/LessPaperWork/LessPaper.Shared.Queueing?branch=master)
 
 ## Git naming conventions
 ### Branch naming conventions
