@@ -1,5 +1,7 @@
 ﻿
 
+using LessPaper.Shared.Enums;
+
 namespace LessPaper.Shared.Queueing.Models.Dto.v1
 {
     public class QueueFileMetadataDto
@@ -12,7 +14,7 @@ namespace LessPaper.Shared.Queueing.Models.Dto.v1
 
         public string EncryptedKey { get; set; }
         
-        public string DocumentLanguage { get; set; }
+        public DocumentLanguage DocumentLanguage { get; set; }
 
         public string DirectoryId { get; set; }
     }

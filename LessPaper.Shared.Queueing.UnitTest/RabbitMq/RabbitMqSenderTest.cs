@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using GreenPipes;
-using LessPaper.Shared.Queueing.Interfaces;
-using LessPaper.Shared.Queueing.Interfaces.RabbitMq;
+using LessPaper.Shared.Interfaces.Queuing;
 using LessPaper.Shared.Queueing.Models.RabbitMq;
 using MassTransit;
-using MassTransit.Hosting;
 using Moq;
 using Xunit;
 

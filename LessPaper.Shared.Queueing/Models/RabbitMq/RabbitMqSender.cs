@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using LessPaper.Shared.Interfaces.Queuing;
 using LessPaper.Shared.Queueing.Interfaces;
 using LessPaper.Shared.Queueing.Interfaces.RabbitMq;
 using MassTransit;
